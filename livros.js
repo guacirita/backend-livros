@@ -84,9 +84,6 @@ async function deletaLivro(request, response) {
 }
 
 
-
-
-
 app.use(router.get('/livros', mostraLivros)); // configura rota GET/livros
 app.use(router.post('/livros', criaLivro)); // configura rota POST/livros
 app.use(router.patch('/livros/:id', corrigeLivro)); // configura a rota PATCH/livros
