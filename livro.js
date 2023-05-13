@@ -18,5 +18,5 @@ function mostraPorta() {
     console.log("Servidor criado e rodando na porta", porta);
 }
 
-app.use(router.get('/livro', mostraLivro));
+
 app.listen(porta, mostraPorta);
