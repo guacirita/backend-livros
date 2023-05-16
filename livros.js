@@ -91,7 +91,7 @@ app.use(router.delete('/livros/:id', deletaLivro)); // configura a rota DELETE/l
 
 //PORTA
 function mostraPorta() {
-    console.log("Servidor criado e rodando na porta", porta);
+    console.log(`Servidor criado e rodando na porta ${porta}`);
 }
 
 app.listen(porta, mostraPorta); // servidor ouvindo a porta
