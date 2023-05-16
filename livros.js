@@ -5,7 +5,7 @@ const cors = require('cors'); //trazendo o pacote cors que permite esta api no f
 const conectaBancoDeDados = require("./bancoDeDados"); // ligando o arquivo com banco de dados
 conectaBancoDeDados(); // chamando a função que conecta o banco de dados
 
-const Livro = require('./livroModel');
+const Livro = require('./LivroModel');
 
 const app = express(); // iniciando o app
 app.use(express.json());//chamando a função
@@ -91,7 +91,7 @@ app.use(router.delete('/livros/:id', deletaLivro)); // configura a rota DELETE/l
 
 //PORTA
 function mostraPorta() {
-    console.log(`Servidor criado e rodando na porta $ {PORTA}`);
+    console.log(`Servidor criado e rodando na porta $ {porta}`);
 }
 
-app.listen(PORTA, mostraPorta); // servidor ouvindo a porta
+app.listen(porta, mostraPorta); // servidor ouvindo a porta
