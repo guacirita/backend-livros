@@ -3,19 +3,19 @@ const mongoose = require('mongoose');
 const LivroSchema = new mongoose.Schema({
     nome: {
         type: String,
-        required: true
+        required: true,
     },
     autora: {
         type: String,
-        required: true
+        required: true,
     },
     imagem: {
         type: String,
-        required: true
+        required: true,
     },
     categoria: {
         type: String,
-        required: true
+        required: true,
     }
 
 })
