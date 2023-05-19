@@ -13,7 +13,7 @@ const LivroSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    categoria: {
+    citacao: {
         type: String,
         required: true,
     }

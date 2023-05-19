@@ -31,7 +31,7 @@ async function criaLivro(request, response){
         nome: request.body.nome,
         autora: request.body.autora,
         imagem: request.body.imagem,
-        categoria: request.body.categoria
+        citacao: request.body.citacao
     })
     
     try{
@@ -59,8 +59,8 @@ async function corrigeLivro(request, response){
         livroEncontrado.imagem = request.body.imagem;
     }
 
-    if(request.body.categoria) {
-        livroEncontrado.categoria = request.body.categoria;
+    if(request.body.citacao) {
+        livroEncontrado.citacao = request.body.citacao;
     }
 
     const livroAtualizadoNoBancoDeDados = await livroEncontrado.save();
